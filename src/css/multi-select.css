@@ -1,0 +1,5 @@
+.select__option::before {
+    content: "＋";
+    @apply text-blue-500 mr-2;
+  }
+  

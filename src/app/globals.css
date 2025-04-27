@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@tailwind utilities;
+@import "../css/multi-select.css";
+
+@theme {
+  --color-blue-500: #262322;
+  --color-blue-400: #463730;
+  --color-almond: #f2e5d7;
+  --color-player: #918B76;
+  --color-cancel: #537A5A;
+  --color-cancel-hover: #35524A;
+}
+
+.parent:hover .child {
+  @apply opacity-100;
+}
+
+
+@layer utilities {
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite ease-in-out;
+  }
+}
+
